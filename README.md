@@ -129,7 +129,7 @@ Secret: XXXXXXXXXXXXXXXX
 
 ### clean
 
-Run `totp list --secret` then asks the user whether they confirm the deletion.
+Run `totp list --secret` then ask the user whether they confirm the deletion.
 
 ```console
 $ totp clean -h
@@ -154,7 +154,7 @@ Removed all accounts.
 
 ### get
 
-Print out the current TOTP code for the selected account.<br> If no name was passed in, it will ask for the ID.<br>
+Print out the current TOTP code for the selected account. If no name was passed in, it will ask for the ID.<br>
 Normally, the code will be automatically copied to the clipboard. You can disable this with the flag `-n` or `--no-copy`.
 
 ```console
