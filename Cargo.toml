@@ -1,0 +1,15 @@
+[package]
+name = "totp"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.5.53", features = ["derive"] }
+tabled = "0.20.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anstyle = "1.0.13"
+data-encoding = "2.9.0"
+totp-lite = "2.0.1"
+arboard = "3.6.1"
+owo-colors = "4.2.3"
