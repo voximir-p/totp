@@ -149,7 +149,7 @@ impl AccountArray {
         match self.accounts.binary_search_by(|a| a.name.cmp(name)) {
             Ok(_) => {
                 println!(
-                    "Account {} already existed, please remove it first.",
+                    "Account: {} already exists, please remove it first.",
                     name.green()
                 );
             }

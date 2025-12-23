@@ -87,6 +87,6 @@ pub(crate) struct GetArgs {
     pub name: Option<String>,
 
     #[arg(short = 'n', long = "no-copy")]
-    #[arg(help = "Disable copying to clipboard")]
+    #[arg(help = "Disable copying to the clipboard")]
     pub no_copy: bool,
 }
