@@ -189,4 +189,4 @@ Expires in 17 seconds.
 
 ## License
 
-totp is licensed under the MIT license ([LICENSE-MIT](LICENSE-MIT) or <https://opensource.org/licenses/MIT>)
+totp is licensed under the MIT license ([LICENSE-MIT](LICENSE) or <https://opensource.org/licenses/MIT>)
