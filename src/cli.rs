@@ -28,7 +28,10 @@ pub fn make_styles() -> Styles {
 }
 
 #[derive(Parser)]
-#[command(about = "An extremely fast TOTP account manager.")]
+#[command(
+    about = "An extremely fast TOTP account manager.",
+    version = "1.0.0 (2025-12-23)"
+)]
 pub(crate) struct Cli {
     #[command(subcommand)]
     pub command: Command,
