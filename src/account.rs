@@ -192,16 +192,15 @@ impl AccountArray {
     }
 
     fn get(&mut self, arg: GetArgs) {
-        let index;
         let name = &arg.name;
 
-        match name {
+        let index = match name {
             None => {
                 self.list(false);
                 print!("\nSelect account from ID: ");
 
                 let mut buf = String::new();
-                index = match flush_ask(&mut buf).parse() {
+                match flush_ask(&mut buf).parse() {
                     Ok(index) => index,
                     Err(_) => {
                         eprintln!("{}", "Invalid ID!".bright_red());
@@ -210,7 +209,7 @@ impl AccountArray {
                 }
             }
             Some(name) => {
-                index = match self.find(name) {
+                match self.find(name) {
                     Ok(index) => index,
                     Err(_) => {
                         eprintln!("Cannot find account with name: {}", name.green());
@@ -218,7 +217,7 @@ impl AccountArray {
                     }
                 }
             }
-        }
+        };
         match self.accounts.get(index) {
             None => {
                 eprintln!("{}", "Index out of range!".bright_red());
